@@ -1,0 +1,483 @@
+@charset "utf-8";
+
+html {
+  font-size: 100%;
+}
+body {
+  line-height: 1;
+  font-family: "Noto Sans JP", serif;
+  color: #444;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+th,dt {
+  font-weight: normal;
+}
+em {
+  font-style: normal;
+}
+.green-text {
+  color: #21a937;
+}
+.underline {
+  text-decoration-color: #99e5a5;
+  text-decoration-line: underline;
+  text-decoration-thickness: 10px;
+  text-underline-offset: -3px;
+  text-decoration-skip-ink: none;
+}
+.site-logo a {
+  display: block;
+}
+.tel {
+  display: inline-block;
+  pointer-events: none;
+  margin-top: 13px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.tel img {
+  margin-right: 5px;
+}
+
+/*------------------------------
+ヘッダー
+------------------------------*/
+header {
+  height: 130px;
+}
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.header-tel-box {
+  text-align: right;
+}
+.header-tel-box p {
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  font-size: 0.875rem;
+}
+/*------------------------------
+メインビジュアル
+------------------------------*/
+.main-visual {
+  height: 947px;
+  background-image: url(/img/fv1.jpg);
+  background-size: cover;
+  padding-top: 133px;
+  padding-left: 211px;
+}
+.main-visual-text-box {
+  writing-mode: vertical-rl;
+}
+.main-visual-text-box .text-background {
+  display: flex;
+  align-items: center;
+  width: 102px;
+  height: 565px;
+  padding-top: 18px;
+  background-color: #fff;
+}
+.main-visual-text-box .text-background:first-child {
+  margin-left: 80px;
+}
+.main-visual-text-box p {
+  letter-spacing: 0.24em;
+  font-size: clamp(1.25rem, 1.129rem + 0.52vw, 1.75rem);
+  font-weight: bold;
+}
+
+/*------------------------------
+beliefセクション
+------------------------------*/
+.belief-inner {
+  display: flex;
+  gap: 42px;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 162px 0 82px 33px;
+}
+.belief-text {
+  margin-top: 31px;
+}
+.belief-heading {
+  max-width: 300px;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  line-height: 2.6;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.belief-text-detail {
+  max-width: 415px;
+  margin-top: 43px;
+}
+.belief-text p {
+  line-height: 2.4;
+}
+
+/*------------------------------
+treatmentセクション
+------------------------------*/
+.treatment {
+  background-color: #f5fcf8;
+}
+.treatment-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 78px 0 82px 0;
+}
+.treatment-heading {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.treatment-text {
+  margin-top: 76px;
+  text-align: center;
+}
+.treatment-details {
+  display: flex;
+  gap: 20px;
+  margin-top: 34px;
+}
+.treatment-detail {
+  position: relative;
+  max-width: 380px;
+  height: 591px;
+  padding: 40px 37px 0;
+  border: 2px solid #c9c9c9;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.treatment-detail-heading {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.treatment-detail-text {
+  margin-top: 45px;
+  line-height: 2.4;
+  font-weight: bold;
+}
+.treatment-detail-img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+/*------------------------------
+newsセクション
+------------------------------*/
+.news {
+  background-color: #f5fcf8;
+}
+.news-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-bottom: 113px;
+}
+.news-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+.news-list-box {
+  margin-top: 76px;
+  padding: 30px 66px 46px;
+  border-radius: 30px;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 0.16);
+}
+.news-list li {
+  padding: 19px 0;
+  border-bottom: 2px solid #e7e7e7;
+  font-weight: bold;
+}
+.news-list li a:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.news-category {
+  display: inline-block;
+  width: 80px;
+  margin-left: 30px;
+  padding: 4px 0;
+  text-align: center;
+  font-size: 0.75rem;
+  background-color: #444;
+  color: #fff;
+}
+.news-detail {
+  margin-left: 30px;
+}
+.more-btn {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 45px;
+}
+.more-btn a {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-weight: bold;
+}
+.more-btn a:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.more-btn a::after {
+  content: "";
+  position: absolute;
+  left: calc(100% + 14px);
+  background-color: #444;
+  height: calc(tan(60deg) * 14px / 2);
+  width: 14px;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  transform: rotate(90deg);
+}
+
+/*------------------------------
+フッター
+------------------------------*/
+.footer-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 196px 0 139px;
+}
+.footer-contents {
+  display: flex;
+  gap: 38px;
+}
+.footer-text {
+  flex-grow: 1;
+}
+.footer-address {
+  display: flex;
+  gap: 16px;
+  margin-top: 52px;
+}
+.footer-tel-box {
+  margin-top: 25px;
+}
+.time-table {
+  margin-top: 31px;
+  padding: 18px 0;
+  border-top: 2px solid #e7e7e7;
+  border-bottom: 2px solid #e7e7e7;
+  font-size: 0.875rem;
+}
+.time-table .underline {
+  text-decoration-thickness: 4px;
+}
+.time-table dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+.time-table dt {
+  width: 16%;
+  padding-top: 3px;
+}
+.time-table dd {
+  display: flex;
+  width: 80%;
+  border-left: 2px solid #e7e7e7;
+  padding-left: 28px;
+}
+.time-table dd:first-of-type {
+  padding-top: 3px;
+}
+.time-table dd:nth-of-type(2),
+.time-table dd:nth-of-type(3) {
+  margin-left: 16%;
+  padding-top: 13px;
+}
+.time-table dd:nth-of-type(3) {
+  padding-bottom: 6px;
+}
+.time-table dd p:nth-child(2) {
+  margin-left: 23px;
+}
+.time-table dd p:nth-child(3) {
+  margin-left: 17px;
+}
+.time-table .closed-days {
+  margin-top: 29px;
+  padding-top: 5px;
+  padding-bottom: 4px;
+}
+.copy-right {
+  margin-top: 8px;
+  text-align: right;
+  font-size: 0.6875em;
+}
+
+
+/*------------------------------
+レスポンシブ
+------------------------------*/
+@media screen and (max-width: 1700px) {
+  .main-visual {
+    height: calc(100vh - 130px);
+    background-position: 60% 0;
+  }
+}
+@media screen and (max-width: 1300px){
+  .main-visual {
+    position: relative;
+    padding-top: 0;
+  }
+  .main-visual-text-box {
+    position: absolute;
+    top: 20px;
+  }
+  .main-visual-text-box .text-background {
+    width: 93px;
+    height: 515px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .main-visual {
+    padding-left: 40px;
+  }
+  .belief-inner {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .belief-text {
+    text-align: center;
+  }
+  .belief-heading {
+    margin: auto;
+  }
+  .belief-text-detail {
+    max-width: 100%;
+  }
+  .treatment-details {
+    flex-direction: column;
+    align-items: center;
+  }
+  .news-list li a {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .news-detail {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0;
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+  .footer-inner {
+    padding: 100px 20px 50px;
+  }
+  .footer-contents {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-text {
+    max-width: 608px;
+  }
+}
+@media screen and (max-width: 834px) {
+  .tel {
+    pointer-events: auto;
+  }
+  .main-visual-text-box .text-background {
+    height: 450px;
+  }
+  .main-visual-text-box .text-background:first-child {
+    margin-left: 30px;
+  }
+  .footer-map {
+    width: 100%;
+  }
+  .footer-map iframe {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .site-logo {
+    width: 182px;
+  }
+  .main-visual {
+    height: 600px;
+  }
+  .main-visual .text-background {
+    width: 50px;
+    height: 390px;
+  }
+  .belief-inner {
+    padding-top: 60px;
+  }
+  .belief-text-detail,
+  .treatment-text {
+    font-size: 0.875rem;
+  }
+  .news-inner {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .news-list-box {
+    padding-right: 13px;
+    padding-left: 13px;
+  }
+  .more-btn a::after {
+    position: static;
+  }
+  .time-table dt {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  .time-table dd {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    border-left: none;
+  }
+  .time-table dd:nth-last-of-type(2),
+  .time-table dd:nth-last-of-type(3) {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .time-table dd p:first-of-type {
+    width: 100%;
+    margin-bottom: 13px;
+  }
+  .time-table dd p:nth-child(2) {
+    margin-left: 0;
+  }
+  .time-table .closed-days {
+    margin-top: 0;
+  }
+  .time-table dt.closed-days {
+    margin-top: 10px;
+  }
+  .footer-inner {
+    padding-top: 50px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .treatment-inner {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .treatment-detail-text {
+    font-size: 0.875rem;
+  }
+}
