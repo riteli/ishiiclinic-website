@@ -70,7 +70,7 @@ header {
 ------------------------------*/
 .main-visual {
   height: 947px;
-  background-image: url(./img/fv1.jpg);
+  background-image: url(../img/fv1.jpg);
   background-size: cover;
   padding-top: 133px;
   padding-left: 211px;
